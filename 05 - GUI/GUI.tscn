@@ -1,0 +1,96 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://myVBoxButton.gd" type="Script" id=1]
+[ext_resource path="res://comicFont.fnt" type="BitmapFont" id=2]
+[ext_resource path="res://myDialogue.gd" type="Script" id=3]
+
+[node name="VBoxContainer" type="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 212.0
+margin/top = 49.0
+margin/right = 661.0
+margin/bottom = 313.0
+alignment = 0
+script/script = ExtResource( 1 )
+
+[node name="MenuButton" type="MenuButton" parent="."]
+
+hint/tooltip = "click me for game"
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 449.0
+margin/bottom = 26.0
+custom_fonts/font = ExtResource( 2 )
+toggle_mode = false
+click_on_press = true
+enabled_focus_mode = 0
+shortcut = null
+text = "New Game"
+flat = true
+items = [  ]
+
+[node name="SettingsButton" type="MenuButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 30.0
+margin/right = 449.0
+margin/bottom = 56.0
+custom_fonts/font = ExtResource( 2 )
+toggle_mode = false
+click_on_press = true
+enabled_focus_mode = 0
+shortcut = null
+text = "Settings"
+flat = true
+items = [  ]
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 147.0
+margin/top = 155.0
+margin/right = 596.0
+margin/bottom = 213.0
+popup/exclusive = false
+window/title = "message"
+dialog/text = "pop up box"
+dialog/hide_on_ok = true
+script/script = ExtResource( 3 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 60.0
+margin/right = 449.0
+margin/bottom = 60.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[connection signal="pressed" from="SettingsButton" to="." method="_on_SettingsButton_pressed"]
+
+[connection signal="confirmed" from="AcceptDialog" to="AcceptDialog" method="_on_AcceptDialog_confirmed"]
+
+

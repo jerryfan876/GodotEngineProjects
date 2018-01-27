@@ -1,0 +1,173 @@
+[gd_scene load_steps=10 format=1]
+
+[ext_resource path="res://tiles/TilesJan8.xml" type="TileSet" id=1]
+[ext_resource path="res://script/labeltest.gd" type="Script" id=2]
+[ext_resource path="res://script/rigidchara.gd" type="Script" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+[ext_resource path="res://script/character.gd" type="Script" id=5]
+[ext_resource path="res://script/area2d.gd" type="Script" id=6]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 32, 32, -32, 32, -32, -32, 32, -32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[node name="rootNode" type="Node"]
+
+[node name="TileMap 2" type="TileMap" parent="."]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell/size = Vector2( 32, 32 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 262151, 36, 262152, 36, 262153, 36, 262154, 36, 262155, 36, 262156, 36, 262157, 38, 262158, 38, 262159, 38, 262160, 38, 262161, 38, 262162, 38, 262163, 38, 262164, 37, 262165, 37, 262166, 37, 262167, 37, 262168, 37, 524312, 38, 524313, 38, 524314, 38, 524315, 38, 524316, 38, 524317, 38, 524318, 38, 589826, 38, 589827, 38, 589828, 38, 589829, 38, 589830, 38, 589831, 38, 589832, 38, 589833, 38, 589834, 38, 589835, 38, 589836, 38, 917519, 38, 917520, 38, 917521, 38, 917522, 38, 917523, 38, 917524, 38, 917525, 38, 917526, 38, 917527, 38, 917528, 38, 917529, 38, 917530, 38, 917534, 38, 917535, 38, 917536, 38, 917537, 38, 917538, 38, 917539, 38, 917540, 38 )
+
+[node name="Label" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 469.0
+margin/top = 237.0
+margin/right = 509.0
+margin/bottom = 251.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script/script = ExtResource( 2 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 736, 384 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+player_speed = 200
+
+[node name="Sprite" type="Sprite" parent="RigidBody2D"]
+
+texture = ExtResource( 4 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 32, 32, -32, 32, -32, -32, 32, -32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 480, 32 )
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+script/script = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true
+}
+gravity = 300
+player_speed = 300
+acceleration = 8
+
+[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
+
+texture = ExtResource( 4 )
+
+[node name="CollisionPolygon2D1" type="CollisionPolygon2D" parent="KinematicBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -32, 32, 32, 32, 32, -32, -32, -32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="Area2D" type="Area2D" parent="."]
+
+transform/pos = Vector2( 896, 192 )
+transform/scale = Vector2( 5, 2 )
+input/pickable = true
+space_override = 1
+gravity_distance_scale = 1.0
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 6 )
+
+[node name="KinematicBody2Dtest" type="KinematicBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 896, 192 )
+input/pickable = false
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="KinematicBody2Dtest"]
+
+build_mode = 0
+polygon = Vector2Array( -32, 32, 32, 32, 32, -32, -32, -32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="Sprite" type="Sprite" parent="KinematicBody2Dtest"]
+
+texture = ExtResource( 4 )
+
+[connection signal="body_enter" from="Area2D" to="Area2D" method="_on_Area2D_body_enter"]
+
+

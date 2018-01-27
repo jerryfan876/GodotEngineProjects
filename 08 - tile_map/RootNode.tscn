@@ -1,0 +1,139 @@
+[gd_scene load_steps=8 format=1]
+
+[ext_resource path="res://TileKit.tex" type="Texture" id=1]
+[ext_resource path="res://icon.tex" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 4.39723, 5.75685, 4.97054, 6.07269, 5.11598, 7.16727, 4.95377, 8.5878, 0.758309, 8.70054, 0.623873, 7.60584, 0.653137, 5.79991, 0.849467, 4.89486 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 3.76227, 2.28195, 4.39723, 5.75685, 0.849467, 4.89486, 0.813063, 3.28315, 0.964537, 1.9917, 1.28375, 1.92355, 3.4863, 1.9627 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 3.50034, 0.514823, 3.4863, 1.9627, 1.28375, 1.92355, 1.2922, 0.698225, 1.40131, -0.708309, 3.31627, -0.356815 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 3.20305, -1.83867, 3.31627, -0.356815, 1.40131, -0.708309, 1.6392, -1.88517 )
+
+[node name="RootNode" type="Node"]
+
+[node name="tile1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 16, 16 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 224, 64, 32, 32 )
+
+[node name="tile2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 48, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 64, 0, 32, 32 )
+
+[node name="tile3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 80, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 288, 0, 32, 32 )
+
+[node name="tile4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 112, 80 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 224, 0, 32, 32 )
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+transform/pos = Vector2( 183.264, 32.5802 )
+input/pickable = false
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 3.2267, 0, 0, 3.2267, -0.103676, 1.67305 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 10.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 5.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+
+[node name="Sprite" type="Sprite" parent="RigidBody2D"]
+
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+
+transform/pos = Vector2( -0.103676, 1.67305 )
+transform/scale = Vector2( 3.2267, 3.2267 )
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 112, 144 )
+texture = ExtResource( 1 )
+region = true
+region_rect = Rect2( 32, 544, 160, 64 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite"]
+
+transform/pos = Vector2( 2.23149, 0 )
+transform/scale = Vector2( 2.49597, 1 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 14.4513, 0.0708439, -0.0301968, 6.15976, -41.6998, -21.5208 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 2 )
+shapes/1/transform = Matrix32( 14.4513, 0.0708439, -0.0301968, 6.15976, -41.6998, -21.5208 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 3 )
+shapes/2/transform = Matrix32( 14.4513, 0.0708439, -0.0301968, 6.15976, -41.6998, -21.5208 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 4 )
+shapes/3/transform = Matrix32( 14.4513, 0.0708439, -0.0301968, 6.15976, -41.6998, -21.5208 )
+shapes/3/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite/StaticBody2D"]
+
+transform/pos = Vector2( -41.6998, -21.5208 )
+transform/rot = -0.280877
+transform/scale = Vector2( 14.4514, 6.15984 )
+build_mode = 0
+polygon = Vector2Array( 5.11598, 7.16727, 4.95377, 8.5878, 0.758309, 8.70054, 0.623873, 7.60584, 0.653137, 5.79991, 0.849467, 4.89486, 0.813063, 3.28315, 0.964537, 1.9917, 1.28375, 1.92355, 1.2922, 0.698225, 1.40131, -0.708309, 1.6392, -1.88517, 3.20305, -1.83867, 3.31627, -0.356815, 3.50034, 0.514823, 3.4863, 1.9627, 3.76227, 2.28195, 4.39723, 5.75685, 4.97054, 6.07269 )
+shape_range = Vector2( 0, 3 )
+trigger = false
+
+

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://manny.jpg" type="Texture" id=1]
+[ext_resource path="res://myScript.gd" type="Script" id=2]
+
+[node name="Sprite" type="Sprite"]
+
+transform/pos = Vector2( 196.441, 213.882 )
+transform/scale = Vector2( 0.663822, 0.616121 )
+texture = ExtResource( 1 )
+script/script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 150 )
+texture = ExtResource( 1 )
+
+

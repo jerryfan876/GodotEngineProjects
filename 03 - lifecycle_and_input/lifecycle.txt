@@ -1,0 +1,17 @@
+2017 12 19
+
+How to poll for input
+	using process 
+understanding scene tree
+	main loop -> scene tree (appliation)-> scene (viewport) -> nodes
+
+input/output
+	event handling
+	events that are unhandled, how to get them
+		set_process_unhandled_input(true)
+	inputmap
+		name to an event, buttons, on or off events 
+		"if the input source is done"
+		allows user to define their own keys, reconfigerable controls 
+			
+
