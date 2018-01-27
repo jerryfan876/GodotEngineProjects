@@ -1,6 +1,7 @@
-#Godot Game Engine
+# Godot Game Engine To Do List:
 
-**GameFromScratch Tutorials:**
+#### GameFromScratch Tutorials
+
 [Link](http://www.gamefromscratch.com/page/Godot-Game-Engine-tutorial-series.aspx)
 
 - [x] Our First Godot Application
@@ -39,11 +40,11 @@
 
 - [ ] 2D Lighting
 
-**GDquest Tutorials**
+#### GDquest Tutorials
 
-**My Snake Game**
+#### My Snake Game
 
-**My Platformer Game**
+#### My Platformer Game
 
 
 
