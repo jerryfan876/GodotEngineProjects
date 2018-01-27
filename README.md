@@ -3,7 +3,7 @@
 **GameFromScratch Tutorials:**
 [Link](http://www.gamefromscratch.com/page/Godot-Game-Engine-tutorial-series.aspx)
 
- [x] Your First Godot Application
+[x] Our First Godot Application
 
  [x] 2D Scenes, Sprites, Coordinates and Viewports
 
