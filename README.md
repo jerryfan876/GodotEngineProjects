@@ -3,41 +3,41 @@
 **GameFromScratch Tutorials:**
 [Link](http://www.gamefromscratch.com/page/Godot-Game-Engine-tutorial-series.aspx)
 
-[x] Our First Godot Application
+- [x] Our First Godot Application
 
- [x] 2D Scenes, Sprites, Coordinates and Viewports
+- [x] 2D Scenes, Sprites, Coordinates and Viewports
 
- [x] Program Lifecycle and Input Handling
+- [x] Program Lifecycle and Input Handling
 
- [x] Playing SoundFX and Music
+- [x] Playing SoundFX and Music
 
- [x] GUI Programming. Using Controls, Widgets and Containers
+- [x] GUI Programming. Using Controls, Widgets and Containers
 
- [x] Handling Multiple Scenes and Global Data
+- [x] Handling Multiple Scenes and Global Data
 
- [x] Collision Detection and Physics Simulation
+- [x] Collision Detection and Physics Simulation
 
- [x] Creating 2D level using Tilemaps
+- [x] Creating 2D level using Tilemaps
 
- [ ] Sprite Animation
+- [ ] Sprite Animation
 
- [ ] Keyframe Animation
+- [ ] Keyframe Animation
 
- [ ] 2D AI -- Navigation, NavMesh and Path Following
+- [ ] 2D AI -- Navigation, NavMesh and Path Following
 
- [ ] 2D Particles
+- [ ] 2D Particles
 
- [ ] Viewports and Cameras
+- [ ] Viewports and Cameras
 
- [ ] Beginning 3D
+- [ ] Beginning 3D
 
- [ ] Static and Procedural 3D Meshes
+- [ ] Static and Procedural 3D Meshes
 
- [ ] Using Animated 3D Models(COLLADA)
+- [ ] Using Animated 3D Models(COLLADA)
 
- [ ] 3D Raycasting
+- [ ] 3D Raycasting
 
- [ ] 2D Lighting
+- [ ] 2D Lighting
 
 **GDquest Tutorials**
 
