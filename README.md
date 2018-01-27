@@ -1,6 +1,6 @@
 # Godot Game Engine To Do List:
 
-### GameFromScratch Tutorials
+## GameFromScratch Tutorials
 [Link](http://www.gamefromscratch.com/page/Godot-Game-Engine-tutorial-series.aspx)
 
 - [x] Our First Godot Application
@@ -22,7 +22,7 @@
 - [ ] 3D Raycasting
 - [ ] 2D Lighting
 
-### GDquest Tutorials
+## GDquest Tutorials
 ##### 30 Days of Godot Tutorials
 [Link](http://gdquest.com/tutorial/game-design/godot/30-days-free-game-creation-tutorial/)
 
@@ -63,7 +63,7 @@
 - [ ] 30. Intro to UI containers
 - [ ] 31. Tennis on steroids? Godot programming, Kickstarter finish
 
-### My Snake Game
+## My Snake Game
 - [X] Scene Managment
 - [x] Introducing global variables which can be managed by any script 
 - [x] Creating sprite nodes and attaching scripts to each
@@ -72,8 +72,8 @@
 - [ ] Create tuple to store location of each snake piece
 - [ ] Give it a better texture
 - [ ] ...
-### My Platformer Game
-
+## My Platformer Game
+- [ ] ...
 
 
 
