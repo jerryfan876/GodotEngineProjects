@@ -1,12 +1,12 @@
 INCLUDES:
 
-GAME FROM SCRATCH TUTORIALS:
+GameFromScratch Tutorials
 
-GDQUEST TUTORIALS:
+GDquest Tutorials
 
-PERSONAL MINI GAMES:
--MY SNAKE GAME
--A PLATFORMER GAME
+My Snake Game
+
+My Platformer Game 
 
 
 
