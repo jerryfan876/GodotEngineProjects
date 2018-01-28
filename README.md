@@ -11,7 +11,7 @@
 - [x] Handling Multiple Scenes and Global Data
 - [x] Collision Detection and Physics Simulation
 - [x] Creating 2D level using Tilemaps
-- [ ] Sprite Animation
+- [x] Sprite Animation
 - [ ] Keyframe Animation
 - [ ] 2D AI -- Navigation, NavMesh and Path Following
 - [ ] 2D Particles
