@@ -1,0 +1,31 @@
+[gd_scene load_steps=11 format=1]
+
+[ext_resource path="res://frames/1.tex" type="Texture" id=1]
+[ext_resource path="res://frames/2.tex" type="Texture" id=2]
+[ext_resource path="res://frames/3.tex" type="Texture" id=3]
+[ext_resource path="res://frames/4.tex" type="Texture" id=4]
+[ext_resource path="res://frames/5.tex" type="Texture" id=5]
+[ext_resource path="res://frames/6.tex" type="Texture" id=6]
+[ext_resource path="res://frames/7.tex" type="Texture" id=7]
+[ext_resource path="res://frames/8.tex" type="Texture" id=8]
+[ext_resource path="res://animated.gd" type="Script" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="TreeRoot" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+
+transform/pos = Vector2( 427.493, 192.464 )
+frames = SubResource( 1 )
+animation = "default"
+script/script = ExtResource( 9 )
+
+
