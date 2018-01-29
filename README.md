@@ -27,8 +27,8 @@
 [Link](http://gdquest.com/tutorial/game-design/godot/30-days-free-game-creation-tutorial/)
 
 ###### Week 1: Custom camera, Tilesets and Animation
-- [ ] 1. Custom Camera in Godot, part 1: Transform the Canvas
-- [ ] 2. Custom Camera in Godot, part 2: Follow the Player
+- [x] 1. Custom Camera in Godot, part 1: Transform the Canvas
+- [x] 2. Custom Camera in Godot, part 2: Follow the Player
 - [ ] 3. Custom Camera in Godot 3: Let's simplify the code!
 - [ ] 4. Zelda-like Custom Camera: Instant room transitions in Godot
 - [ ] 5. Introduction to tilesets in the Godot Engine
