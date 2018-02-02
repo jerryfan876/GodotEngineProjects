@@ -43,16 +43,27 @@ script/script = ExtResource( 2 )
 
 [node name="snakeHead" type="Sprite" parent="."]
 
-transform/pos = Vector2( 60, 60 )
+transform/pos = Vector2( 80, 50 )
 texture = ExtResource( 3 )
 offset = Vector2( 10, 10 )
 script/script = ExtResource( 4 )
 
 [node name="coin" type="Sprite" parent="."]
 
-transform/pos = Vector2( 140, 60 )
+transform/pos = Vector2( 150, 50 )
 texture = ExtResource( 5 )
 offset = Vector2( 10, 10 )
+
+[node name="ItemList" type="ItemList" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 790.0
+margin/top = 80.0
+margin/right = 930.0
+margin/bottom = 340.0
 
 [connection signal="pressed" from="XButton" to="XButton" method="_on_XButton_pressed"]
 
