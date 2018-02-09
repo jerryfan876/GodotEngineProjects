@@ -22,7 +22,7 @@
 - [ ] 3D Raycasting
 - [ ] 2D Lighting
 
-## GDquest Tutorials
+## GDQuest Tutorials
 ##### 30 Days of Godot Tutorials
 [Link](http://gdquest.com/tutorial/game-design/godot/30-days-free-game-creation-tutorial/)
 
