@@ -12,7 +12,7 @@
 - [x] Collision Detection and Physics Simulation
 - [x] Creating 2D level using Tilemaps
 - [x] Sprite Animation
-- [ ] Keyframe Animation
+- [x] Keyframe Animation
 - [ ] 2D AI -- Navigation, NavMesh and Path Following
 - [ ] 2D Particles
 - [ ] Viewports and Cameras
@@ -29,7 +29,7 @@
 ###### Week 1: Custom camera, Tilesets and Animation
 - [x] 1. Custom Camera in Godot, part 1: Transform the Canvas
 - [x] 2. Custom Camera in Godot, part 2: Follow the Player
-- [ ] 3. Custom Camera in Godot 3: Let's simplify the code!
+- [x] 3. Custom Camera in Godot 3: Let's simplify the code!
 - [ ] 4. Zelda-like Custom Camera: Instant room transitions in Godot
 - [ ] 5. Introduction to tilesets in the Godot Engine
 - [ ] 6. Intro to the Animation Tools in the Godot Game Engine
