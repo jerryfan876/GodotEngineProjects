@@ -30,8 +30,8 @@
 - [x] 1. Custom Camera in Godot, part 1: Transform the Canvas
 - [x] 2. Custom Camera in Godot, part 2: Follow the Player
 - [x] 3. Custom Camera in Godot 3: Let's simplify the code!
-- [ ] 4. Zelda-like Custom Camera: Instant room transitions in Godot
-- [ ] 5. Introduction to tilesets in the Godot Engine
+- [x] 4. Zelda-like Custom Camera: Instant room transitions in Godot
+- [x] 5. Introduction to tilesets in the Godot Engine
 - [ ] 6. Intro to the Animation Tools in the Godot Game Engine
 - [ ] 7. [TOOL] Top-Down Tileset Template (Open Source)
 ###### Week 2: Tilemaps, Grids and Vectors
