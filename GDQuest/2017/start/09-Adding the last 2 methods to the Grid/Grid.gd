@@ -31,11 +31,45 @@ func _ready():
 
 
 func is_cell_vacant(pos, direction):
-	# Return true if the cell is vacant, otherwise return false
-	pass
+	var grid_pos = world_to_map(pos) + direction 
+	
+	if (grid_pos.x < grid_size.x and grid_pos.x >= 0):
+		if (grid_pos.y < grid_size.y and grid_pos.y >= 0):
+			if grid[grid_pos.x][grid_pos.y] == null:
+				return true
+			else:
+				 return false 
+	return false 
 
 
-func update_child_pos(child, new_pos, direction):
-	# Move a child to a new position in the grid Array
-	# Returns the new target world position of the child
-	pass
+func update_child_pos(child_node):
+	var grid_pos = world_to_map(child_node.get_pos())
+	print(grid_pos)
+	grid[grid_pos.x][grid_pos.y] = null 
+	
+	var new_grid_pos = grid_pos + child_node.direction 
+	grid[new_grid_pos.x][new_grid_pos.y] = child_node.type
+	
+	var target_pos = map_to_world(new_grid_pos) + half_tile_size
+	return target_pos  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

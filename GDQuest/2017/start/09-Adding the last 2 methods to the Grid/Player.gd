@@ -6,9 +6,12 @@ var speed = 0
 const MAX_SPEED = 400
 
 var velocity = Vector2()
-
+var type 
+var grid 
 
 func _ready():
+	grid = get_parent()
+	type = grid.PLAYER
 	set_fixed_process(true)
 
 
@@ -28,7 +31,10 @@ func _fixed_process(delta):
 		speed = MAX_SPEED
 	else:
 		speed = 0
-
-	velocity = speed * direction.normalized() * delta
-	move(velocity)
+	
+	var target_pos = grid.update_child_pos(self)
+	set_pos(target_pos)
+	
+	#velocity = speed * direction.normalized() * delta
+	#move(velocity)
 	
