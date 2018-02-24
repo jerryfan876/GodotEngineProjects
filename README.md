@@ -32,14 +32,14 @@
 - [x] 3. Custom Camera in Godot 3: Let's simplify the code!
 - [x] 4. Zelda-like Custom Camera: Instant room transitions in Godot
 - [x] 5. Introduction to tilesets in the Godot Engine
-- [ ] 6. Intro to the Animation Tools in the Godot Game Engine
-- [ ] 7. [TOOL] Top-Down Tileset Template (Open Source)
+- [x] 6. Intro to the Animation Tools in the Godot Game Engine
+- [x] 7. [TOOL] Top-Down Tileset Template (Open Source)
 ###### Week 2: Tilemaps, Grids and Vectors
-- [ ] 8. How to Import Maps from Tiled in Godot
-- [ ] 9. The Grid (1/4): Top-Down character movement
-- [ ] 10. The Grid (2/4): Establish the foundations
-- [ ] 11. The Grid (3/4): 2 key functions to manage the game board
-- [ ] 12. The Grid (4/4): Connect the player to the grid
+- [x] 8. How to Import Maps from Tiled in Godot
+- [x] 9. The Grid (1/4): Top-Down character movement
+- [x] 10. The Grid (2/4): Establish the foundations
+- [x] 11. The Grid (3/4): 2 key functions to manage the game board
+- [x] 12. The Grid (4/4): Connect the player to the grid
 - [ ] 13. Introduction to Vectors for Game Creators (Collab with Pigdev)
 - [ ] 14. Shortcuts to Code Faster in the GDscript Editor
 ###### Week 3: Steering, the Kraken and isometric movement
