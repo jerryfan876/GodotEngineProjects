@@ -17,6 +17,10 @@ func _ready():
 		for y in range(grid_size.y):
 			grid[x].append(null)
 	
+	var Player = get_node("Player")
+	var start_pos = update_child_pos(Player)
+	Player.set_pos(start_pos)
+	
 	var positions = []
 	for n in range(5):
 		var grid_pos = Vector2(randi() % int(grid_size.x), randi() % int(grid_size.y))
