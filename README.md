@@ -40,8 +40,8 @@
 - [x] 10. The Grid (2/4): Establish the foundations
 - [x] 11. The Grid (3/4): 2 key functions to manage the game board
 - [x] 12. The Grid (4/4): Connect the player to the grid
-- [ ] 13. Introduction to Vectors for Game Creators (Collab with Pigdev)
-- [ ] 14. Shortcuts to Code Faster in the GDscript Editor
+- [x] 13. Introduction to Vectors for Game Creators (Collab with Pigdev)
+- [x] 14. Shortcuts to Code Faster in the GDscript Editor
 ###### Week 3: Steering, the Kraken and isometric movement
 - [ ] 15. [DEMO] Top-Down Car with Steering in Godot
 - [ ] 16. [TIPS] Script and Scene Sync in Godot: see your changes at runtime!
